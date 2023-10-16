@@ -1,80 +1,45 @@
-body, h1, h2, p, nav {
-    margin: 0;
-    padding: 0;
-}
-
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #1a1a2e;
-    color: #e6e6e6;
-    line-height: 1.6;
-    position: relative;
-}
-
-.background-layer {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url(C:\Users\benfa\OneDrive\Pictures\Images) no-repeat center/cover;
-    z-index: -1;
-    opacity: 0.8;
-}
-
-header {
-    text-align: center;
-    padding: 2rem 0;
-}
-
-header h1 {
-    font-size: 2.5rem;
-}
-
-nav {
-    margin-top: 1rem;
-}
-
-nav a {
-    color: #e6e6e6;
-    text-decoration: none;
-    margin: 0 1.5rem;
-    transition: color 0.3s ease;
-}
-
-nav a:hover {
-    color: #007BFF;
-}
-
-main {
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 80vh;
+    height: 100vh;
+    background-color: #f2f2f2; /* optional background color */
 }
 
-.profile img {
-    width: 100%;  /* Make the image responsive */
-    max-width: 300px;
-    border-radius: 50%;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+.parentDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* This stacks child elements vertically */
+    background-color: #ffffff; /* optional background color for your main content */
+    padding: 20px;
+    border-radius: 8px; /* optional rounded corners */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* optional shadow for a lifted look */
 }
 
-.profile h2 {
-    margin-top: 2rem;
-    font-size: 1.8rem;
+.profileImage {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* making the image circular */
+    margin-bottom: 15px;
 }
 
-.profile p {
-    margin-top: 1rem;
-    font-size: 1rem;
-    max-width: 400px;
+.projects {
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.project {
     text-align: center;
-}
-
-/* Media Query for smaller screens */
-@media (max-width: 768px) {
-    nav a {
-        margin: 0 0.8rem;
-    }
+    flex: 1;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ddd; /* optional border for each project box */
+    border-radius: 5px; /* optional rounded corners for each project box */
 }
