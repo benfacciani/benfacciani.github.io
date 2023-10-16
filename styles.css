@@ -54,6 +54,7 @@ main {
 }
 
 .profile img {
+    width: 100%;  /* Make the image responsive */
     max-width: 300px;
     border-radius: 50%;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
@@ -70,9 +71,10 @@ main {
     max-width: 400px;
     text-align: center;
 }
-.profile img {
-    max-width: 300px;
-    border-radius: 50%;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-}
 
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+    nav a {
+        margin: 0 0.8rem;
+    }
+}
