@@ -6,32 +6,25 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f2f2f2; /* optional background color */
-}
-.profileImage {
-    max-width: 150px;  /* limits the width of the image */
-    height: auto;  /* maintains the aspect ratio of the image */
-    border-radius: 50%; /* making the image circular */
-    margin-bottom: 15px;
+    background-color: #e0e7ff; /* Changed to a soft pastel blue */
 }
 
+.profileImage {
+    max-width: 150px;  
+    height: auto;  /* Maintains the aspect ratio */
+    border-radius: 50%; 
+    margin-bottom: 15px;
+}
 
 .parentDiv {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; /* This stacks child elements vertically */
-    background-color: #ffffff; /* optional background color for your main content */
+    flex-direction: column; 
+    background-color: #ffffff;
     padding: 20px;
-    border-radius: 8px; /* optional rounded corners */
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* optional shadow for a lifted look */
-}
-
-.profileImage {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%; /* making the image circular */
-    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .projects {
@@ -47,6 +40,6 @@ body {
     flex: 1;
     margin: 10px;
     padding: 10px;
-    border: 1px solid #ddd; /* optional border for each project box */
-    border-radius: 5px; /* optional rounded corners for each project box */
+    border: 1px solid #ddd;
+    border-radius: 5px;
 }
